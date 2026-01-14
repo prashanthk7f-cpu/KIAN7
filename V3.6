@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KIAN7 Fin Tech Solutions</title>
+
+<!-- Luxury Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --black:#0b0b0b;
+  --gold:#c9a24d;
+  --white:#ffffff;
+  --soft:#b8b8b8;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:'Inter',sans-serif;
+  line-height:1.65;
+}
+
+/* ================= BRAND ================= */
+.brand-name{
+  font-family:'Playfair Display',serif;
+  font-size:3.8rem;
+  font-weight:600;
+  letter-spacing:2px;
+  background:linear-gradient(135deg,#f5e7b2,#c9a24d,#8a6b2c);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-size:200% auto;
+  animation:goldShimmer 2.8s ease-in-out 1;
+}
+
+.brand-name .seven{
+  font-size:4.8rem;
+  font-weight:700;
+  display:inline-block;
+}
+
+@keyframes goldShimmer{
+  from{background-position:0% center}
+  to{background-position:200% center}
+}
+
+h1,h2,h3{
+  font-family:'Playfair Display',serif;
+}
+
+h2{font-size:2.4rem;margin-bottom:24px}
+h3{font-size:1.4rem;margin-bottom:10px}
+
+p{font-size:1.05rem;color:var(--soft)}
+
+section{padding:90px 0}
+
+.container{width:90%;max-width:1200px;margin:auto}
+
+/* ================= HERO ================= */
+.hero{
+  text-align:center;
+  opacity:0;
+  transform:translateY(30px);
+  animation:heroReveal 1.6s ease-out forwards;
+  animation-delay:.3s;
+}
+
+@keyframes heroReveal{
+  to{opacity:1;transform:none}
+}
+
+.hero img{width:220px;opacity:.18;margin-bottom:20px}
+
+/* ================= BOX ================= */
+.box{
+  background:#111;
+  padding:28px;
+  border-radius:18px;
+  margin-bottom:28px;
+  transition:.4s ease;
+}
+
+@media(hover:hover){
+  .box:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+}
+
+/* ================= REVEAL ================= */
+.reveal{opacity:0;transform:translateY(24px);transition:.9s ease}
+.reveal.active{opacity:1;transform:none}
+
+/* ================= FOOTER ================= */
+footer{border-top:1px solid rgba(255,215,0,.15);padding:40px 0;text-align:center;font-size:.9rem}
+
+/* ================= MOBILE LUXURY (V3.6) ================= */
+@media(max-width:768px){
+  .hero{padding:60px 0}
+  .brand-name{font-size:2.6rem;letter-spacing:1.4px}
+  .brand-name .seven{font-size:3.4rem}
+  .hero img{width:160px}
+  h2{font-size:1.8rem}
+  h3{font-size:1.2rem}
+  .box{padding:22px;border-radius:16px}
+  p{font-size:1rem}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container">
+    <img src="wings.png" alt="KIAN7 Wings">
+    <h1 class="brand-name">KIAN<span class="seven">7</span> FIN TECH SOLUTIONS</h1>
+    <p class="vision">Vision to rule India through financial support and make hassle-free process.</p>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="reveal">
+  <div class="container">
+    <h2>About Us — Beyond Finance</h2>
+
+    <div class="box">
+      <h3>What We Are</h3>
+      <p>KIAN7 Fin Tech Solutions is a financial facilitation institution operating between clients and capital providers with discretion and governance.</p>
+    </div>
+
+    <div class="box">
+      <h3>Why We Exist</h3>
+      <p>To remove complexity, reduce uncertainty, and bring clarity to the Indian financial ecosystem.</p>
+    </div>
+
+    <div class="box">
+      <h3>What We Do</h3>
+      <p>We structure home loans, business loans, project funding, balance transfers, and asset-backed solutions aligned to long-term financial health.</p>
+    </div>
+
+    <div class="box">
+      <h3>How We Do It</h3>
+      <p>Through eligibility logic, compliance-first evaluation, and bank-aligned execution models.</p>
+    </div>
+
+    <div class="box">
+      <h3>Why Clients Trust Us</h3>
+      <p>Clarity over speed. Structure over shortcuts. Long-term interest over short-term gains.</p>
+    </div>
+
+    <div class="box">
+      <h3>Who We Are Led By</h3>
+      <p><b>Prashanth Y — Founder & President</b><br>Vision, governance, and institutional direction.</p>
+      <p><b>Ganesh R — Director</b><br>Execution architecture and scalability.</p>
+      <p><b>Rubina S — Business Development Manager</b><br>Partnerships and disciplined growth.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEADERSHIP ================= -->
+<section class="reveal">
+  <div class="container">
+    <h2>Leadership Vision</h2>
+
+    <div class="box">
+      <h3>Founder Message</h3>
+      <p>Our vision is to build an institution that endures generations by aligning capital with integrity and governance.</p>
+    </div>
+
+    <div class="box">
+      <h3>Leadership Vision 2035</h3>
+      <p>To become a trusted national financial facilitation institution with governance-first execution.</p>
+    </div>
+
+    <div class="box">
+      <h3>Vision 2047 — India @100</h3>
+      <p>Supporting India's growth through structured finance and ethical capital deployment.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>KIAN7 Fin Tech Solutions | Pune, India</p>
+  </div>
+</footer>
+
+<script>
+const reveals=document.querySelectorAll('.reveal');
+const revealOnScroll=()=>{
+  reveals.forEach(r=>{
+    const top=r.getBoundingClientRect().top;
+    if(top<window.innerHeight-80){r.classList.add('active')}
+  })
+};
+window.addEventListener('scroll',revealOnScroll);
+revealOnScroll();
+</script>
+
+</body>
+</html>
